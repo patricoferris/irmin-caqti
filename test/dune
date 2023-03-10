@@ -1,0 +1,4 @@
+(test
+ (name test)
+ (package irmin-caqti-lwt)
+ (libraries irmin-test caqti-driver-postgresql irmin_caqti_lwt))

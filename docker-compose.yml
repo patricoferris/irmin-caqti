@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  postgresql:
+    image: postgres
+    environment:
+      - POSTGRES_USER=bactrian
+      - POSTGRES_PASSWORD=bactrian
+  irmin-caqti:
+    build: .
+    depends_on:
+      - postgresql
+    command: opam exec -- dune runtest

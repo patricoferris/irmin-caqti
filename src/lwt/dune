@@ -1,0 +1,6 @@
+(library
+ (name irmin_caqti_lwt)
+ (public_name irmin-caqti-lwt)
+ (preprocess
+  (pps ppx_irmin.internal))
+ (libraries irmin caqti-lwt))
